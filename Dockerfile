@@ -14,4 +14,6 @@ WORKDIR /app
 
 COPY --from=builder /build/main /app/main
 
+RUN sleep 3
+
 ENTRYPOINT "/app/main"
