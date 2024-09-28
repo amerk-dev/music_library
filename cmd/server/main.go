@@ -1,12 +1,13 @@
 package main
 
 import (
-	"log"
 	"test/internal/frameworks"
+	"test/internal/store"
 )
 
 func main() {
-	log.Println("Hello World")
+	store.DataBaseInit()
+
 	server := frameworks.NewServer()
 	server.Start()
 }
